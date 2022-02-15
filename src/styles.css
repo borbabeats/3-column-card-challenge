@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+body {
+  background: hsl(0, 0%, 95%);
+  width: 1440px;
+}
+
+.container {
+  width: 60vw;
+  height: 55vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.cards {
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 2em;
+  background: hsl(0, 0%, 95%);
+  outline: none;
+}
+
+.logo-vehicle img {
+  width: 48px;
+}
+
+.title-main h2 {
+  text-transform: uppercase;
+  padding: 1em 0;
+  font-size: 2em;
+  color: #f5fefd;
+  font-weight: 700;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.text-description p,
+.text-description button {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  letter-spacing: -0.7px;
+  line-height: 1.8em;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+#yellow-card {
+  background: HSL(31, 77%, 52%);
+}
+
+#esmerald-card {
+  background: HSl(184, 100%, 22%);
+}
+
+#green-card {
+  background: hsl(179, 100%, 13%);
+}
+
+.text-description button {
+  position: absolute;
+  bottom: 2.5em;
+  padding: 0.6em;
+  border: none;
+  border-radius: 20px;
+  width: 136px;
+  background: hsl(0, 0%, 95%);
+}
+
+#yellow-card button {
+  color: HSL(31, 77%, 52%);
+}
+
+#esmerald-card button {
+  color: HSl(184, 100%, 22%);
+}
+
+#green-card button {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
