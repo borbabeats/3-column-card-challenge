@@ -8,12 +8,12 @@
 }
 body {
   background: hsl(0, 0%, 95%);
-  width: 100vw;
+  width: 1440px;
 }
 
 .container {
-  width: 60%;
-  height: 55vh;
+  min-width: 750px;
+  height: 400px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,12 +22,18 @@ body {
 }
 
 .cards {
-  width: 288px;
-  height: 100%;
+  width: 33.3334%;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   padding: 2em;
   background: hsl(0, 0%, 95%);
+  outline: none;
+}
+
+.logo-vehicle img {
+  width: 48px;
 }
 
 .title-main h2 {
@@ -43,8 +49,8 @@ body {
 .text-description button {
   color: hsla(0, 0%, 100%, 0.75);
   font-weight: 400;
-  letter-spacing: -0.7px;
-  line-height: 1.8em;
+  letter-spacing: -0.5px;
+  line-height: 1.5em;
   font-family: "Lexend Deca", sans-serif;
 }
 
@@ -61,8 +67,8 @@ body {
 }
 
 .text-description button {
-  position: absolute;
-  bottom: 2.5em;
+  position: relative;
+  top: 3em;
   padding: 0.6em;
   border: none;
   border-radius: 20px;
@@ -82,17 +88,18 @@ body {
   color: hsl(179, 100%, 13%);
 }
 
+/*-----Mobile version-----*/
+
 @media screen and (max-width: 375px) {
   .container {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    min-width: 320px;
+    padding: 1.5em;
+    top: 15em;
   }
+
   .cards {
     width: 100%;
-  }
-  .text-description button {
-    position: relative;
-    bottom: 5px;
   }
 }
